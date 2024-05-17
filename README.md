@@ -28,7 +28,3 @@ git clone https://github.com/NAVEED476/slashtech-fe.git
 - Node.js
 - npm (Node Package Manager)
 - MySQL/MariaDB/PostgreSQL server
-
-### Installation
-
-1. Clone the repository:

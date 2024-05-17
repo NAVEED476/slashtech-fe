@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./listing.css";
+import { Link } from "react-router-dom";
 
 const ListingJokes = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -49,6 +50,8 @@ const ListingJokes = () => {
         onChange={(e) => setSearchQuery(e.target.value)}
         placeholder="Search for dad jokes..."
       />
+
+      <Link to="/fav"><button>Fav Jokes</button></Link>
       <div className="jokes-cont">
         {jokes.map((joke) => (
           <div key={joke.id} className="jokes-card">
