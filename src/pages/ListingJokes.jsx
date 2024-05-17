@@ -30,7 +30,7 @@ const ListingJokes = () => {
 
   const handleFavorite = async (joke) => {
     try {
-      await axios.post("/api/favorites", {
+      await axios.post("http://localhost:5000/api/favorites", {
         jokeId: joke.id,
         jokeText: joke.joke,
         jokeImageUrl: joke.image,
